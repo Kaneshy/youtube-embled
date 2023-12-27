@@ -6,7 +6,6 @@ const LinksAnime = ({ animes }) => {
 
     const [firsta, setfirsta] = useState('')
     const [second, setsecond] = useState('')
-    const [data, setdata] = useState([])
     console.log('ose',animes)
 
     // console.log(animes.links)

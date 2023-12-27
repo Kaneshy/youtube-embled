@@ -1,8 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { auth, provider } from '@/firebase.js'
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
-import axios from 'axios'
+import { signInWithPopup, signOut } from "firebase/auth";
 import Link from 'next/link';
 
 
