@@ -2,6 +2,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import GoogleAuth from "../auth/GoogleAuth"
+import { FaCloudUploadAlt } from "react-icons/fa";
 
 
 const Navbar = () => {
@@ -14,12 +15,10 @@ const Navbar = () => {
                 <p className=' text-heading3-bold font-bold text-xl  max-xs:hidden p-2'> PIXEL </p>
             </Link>
 
-            <div className="gap-x-10 flex">
-                <div className="flex gap-x-10  align-middle items-center justify-between max-sm:hidden">
-                    <Link href='/Upload'>Upload</Link>
-                </div>
+            <section className="flex justify-between mr-4">
+                <Link href='/Upload' className='pr-4 py-2 rounded-2xl flex justify-center items-center '> <FaCloudUploadAlt size={30} />  </Link>
                 <GoogleAuth />
-            </div>
+            </section>
 
         </nav>
     )
