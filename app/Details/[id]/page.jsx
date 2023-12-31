@@ -34,9 +34,7 @@ const DetailsPage = ({ params }) => {
                             transition={{ duration: 0.3 }}
                             viewport={{ once: true }}
                         >
-                            <div className='p-4 w-full flex max-w-lg'>
-                                <img className='object-contain flex w-full ' src={namemedia.imgUrl} alt="" />
-                            </div>
+
                             <div className='flex flex-col text-center p-10 text-white'>
                                 <h1 className='f text-heading2-bold '>{namemedia.title}</h1>
                                 <div className='flex flex-col p-4'>
@@ -53,6 +51,9 @@ const DetailsPage = ({ params }) => {
                                     </div>
                                 </div>
                                 <p className='font-bold text-lg '>{namemedia.desc}</p>
+                            </div>
+                            <div>
+                                <iframe width="885" height="495" src={namemedia.link} title="Mazzy Star - Look On Down From The Bridge" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
 
                             {/* <div className='absolute -bottom-1 -right-1 rounded-full bg-purple-600 p-2 text-white'>{namemedia.review}</div> */}
